@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <audio id="musicplayer" loop>
+    <source src='/sounds/som-guile-.mp3'>
+  </audio>
+  <link rel="icon" href="./favicon-kof.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0048eb">
+  <title>Characters</title>
+
+</head>
+
+<body>
+  <div class="body-1">
+    <header class="header-bg" id="header">
+      <div class="header container">
+        <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="logo" href="/index.html"><img src="/img/logo.png" alt=""></a>
+
+        <span class="btn-open" data-menu="button" aria-expanded="false" aria-controls="menu"><img src="/img/icons/hamburguer.svg" alt=""></span>
+
+        <div class="header-items">
+          <ul class="som-box">
+            <li onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="button-som ativo" onclick="play();"><img src="/img/icons/som-on.svg" alt=""></li>
+            <li onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="button-som" onclick="pause();"><img src="/img/icons/som-off.svg" alt=""></li>
+            <li class="close-menu"><img src="/img/icons/x.svg" alt=""></li>
+          </ul>
+
+          <nav class="menu-link">
+            <ul>
+              <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/index.html">characters</a></li>
+              <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/stages.html">stages</a></li>
+
+            </ul>
+            </li>
+          </nav>
+
+          <ul class="idioma-box">
+            <li class="idioma">
+
+              <img src="/img/icons/world.svg" alt="">
+              <div onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="select-button" aria-expanded="false" aria-controls="select-languaje">
+                <span class="selected-value">EN US</span>
+              </div>
+
+              <ul class="select-languaje" id="select-languaje">
+                <li>
+                  <input type="radio" id="pt-br" name="languaje">
+                  <label for="pt-br"><img src="/img/icons/world.svg" alt=""> PT BR</label>
+                </li>
+                <li>
+                  <input type="radio" id="en-us" name="languaje">
+                  <label for="en-us"><img src="/img/icons/world.svg" alt="">EN US</label>
+                </li>
+
+              </ul>
+
+
+            </li>
+          </ul>
+          <picture class="img-menu">
+            <img src="/img/iorivskyo1.gif" alt="">
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <main class="container principal">
+      <div class="chars-complete js-tabdata">
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">K'</h1>
+            <p>K' (pronounced "K Dash") was once a normal child who lived with his sister, Seirah. One day, NESTS (a crime syndicate who deals with drugs, genetics, robotics & biotechnology) kidnapped K' and his sister. Over the yeasr, NESTS trained K' to be some kind of weapon. In 1998, K' was to take part in the Kusanagi cloning program. After K' was infused with Kyo's DNA, he was granted the power of pyrokinesis. K's memory was wiped by NESTS and he was made to believe that he was Krizalid's clone.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                  <audio id='hoverSound' src="/sounds/hover.wav" />
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/k/k-pose1.gif" alt="K' animação I">
+                <img src="/img/chars/k/k-pose2.gif" alt="K' animação II">
+                <img src="/img/chars/k/k-pose3.gif" alt="K' animação III">
+                <img src="/img/chars/k/k-pose4.gif" alt="K' animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Maxima</h1>
+            <p>Maxima grew up a street kid in Canada, who learned fighting the hard way. He then became a soldier who led normal life until he found out that his comrade-in-arms Rocky was killed in an incident involving NESTS. So he sought for revenge against NESTS. To avenge Rocky he decided to sacrifice his previous life, had his face and name changed and his "ordinary" life destroyed.He was approached by Nests and offered greater power in return for working for them. He was then equipped with a battle armor and put together with K'.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/maxima/maxima-1.gif" alt="Maxima animação I">
+                <img src="/img/chars/maxima/maxima-2.gif" alt="Maxima animação II">
+                <img src="/img/chars/maxima/maxima-3.gif" alt="Maxima animação III">
+                <img src="/img/chars/maxima/maxima-4.gif" alt="Maxima animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Whip</h1>
+            <p>Whip, whose real name is Seirah, is an amnesiac girl looking for her brother who was K's biological older sister who died after being abducted by NESTS. Whip originally joined the NESTS organization in KOF '99. There she became friends with Krizalid, who seemed to share a bond with her. Regardless of whether she is a clone or not, she is called Seirah by people who knew her in NESTS. Due to NESTS experimentation on her body, she's able to manipulate her specialized whip with ease.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/whip/whip-1.gif" alt="Whip animação I">
+                <img src="/img/chars/whip/whip-2.gif" alt="Whip animação II">
+                <img src="/img/chars/whip/whip-3.gif" alt="Whip animação III">
+                <img src="/img/chars/whip/whip-4.gif" alt="Whip animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Terry Bogard</h1>
+            <p>Terry and his brother Andy grew up as orphans and raised themselves on the streets. They are later adopted by Jeff Bogard who teaches the brothers many things about fighting, as he was a strong fighter himself. When Terry was 10 years old, he witnesses his father's death at the hands of Geese Howard. Afterwards, Terry and Andy vow to avenge their father and dedicate to mastering their martial arts.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/terry/terry-1.gif" alt="Terry animação I">
+                <img src="/img/chars/terry/terry-2.gif" alt="Terry animação II">
+                <img src="/img/chars/terry/terry-3.gif" alt="Terry animação III">
+                <img src="/img/chars/terry/terry-4.gif" alt="Terry animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Andy Bogard</h1>
+            <p>Andy grew up as orphan and raised themselve on the streets. He were later adopted by Jeff Bogard and lived in Southtown for several years. Jeff Bogard taught the brothers many things about fighting. When Terry witnessed his father's death at the hands of Geese Howard. After Terry told Andy what had happened, they vowed to avenge their father and dedicated themselves to mastering their martial arts training.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/andy/andy2.gif" alt="Andy animação I">
+                <img src="/img/chars/andy/andy1.gif" alt="Andy animação II">
+                <img src="/img/chars/andy/andy3.gif" alt="Andy animação III">
+                <img src="/img/chars/andy/andy4.gif" alt="Andy animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Joe Higashi</h1>
+            <p>Although Joe's place of origin is Japan, he spent the majority of his time in Thailand, where he trained in Muay Thai. It was through his victories that Joe got the nickname "Hurricane Upper" Joe Higashi. Joe earned his title as the champion of Muay Thai by beating Hwa Jai in a Muay Thai only tournament. Ever since then, Joe has been defending his title against lesser opponents. Joe then met the Bogard brothers and they became good friends. </p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/joe/joe1.gif" alt="Joe animação I">
+                <img src="/img/chars/joe/joe2.gif" alt="Joe animação II">
+                <img src="/img/chars/joe/joe3.gif" alt="Joe animação III">
+                <img src="/img/chars/joe/joe4.gif" alt="Joe animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Mai Shiranui</h1>
+            <p>Mai learned the secrets of Ninjitsu from her father and from her grandfather's old friend, Jubei Yamada. Mai met Andy Bogard when he moved to Japan, at first, Mai wasn't interested in Andy and thought he was just another callous man only interested in his training. However, when Andy gave her a present on her birthday, she eventually fell in love with him. After they were in a serious relationship.</p>
+          </article>
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/mai/mai1.gif" alt="Mai animação I">
+                <img src="/img/chars/mai/mai2.gif" alt="Mai animação II">
+                <img src="/img/chars/mai/mai3.gif" alt="Mai animação III">
+                <img src="/img/chars/mai/mai4.gif" alt="Mai animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Athena Asamiya</h1>
+            <p>A Japanese schoolgirl, Athena Asamiya teamed up with her friend Sie Kensou to fight in the name of justice. Her psychic powers are believed to be transmigrated to her rather than inherited by her family.
+
+              She became a student of Kensou's Kenpo teacher, Chin Gentsai. Athena became a famous pop idol in Japan.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/athena/athena1.gif" alt="Athena animação I">
+                <img src="/img/chars/athena/athena2.gif" alt="Athena animação II">
+                <img src="/img/chars/athena/athena3.gif" alt="Athena animação III">
+                <img src="/img/chars/athena/athena4.gif" alt="Athena animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">May Lee</h1>
+            <p>The most promising student of Kim Kaphwan's, May Lee was required to join Team Korea in 2001 when Jhun was wounded. Seeing her chance to finally help her hero, she eagerly joined. Kim also suggested that she kept an eye on her teammates, former criminals Chang Koehan and Choi Bounge. This suits Chang and Choi, as May doesn't feel the need to physically punish them on a regular basis like Kim does.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/may-lee/may1.gif" alt="May Lee animação I">
+                <img src="/img/chars/may-lee/may2.gif" alt="May Lee animação II">
+                <img src="/img/chars/may-lee/may3.gif" alt="May Lee animação III">
+                <img src="/img/chars/may-lee/may4.gif" alt="May Lee animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Kyo Kusanagi</h1>
+            <p>Kyo was a high school student and the heir of the Kusanagi clan. Kyo could wield flames naturally, and soon surpassed his father. Destined to fight the Orochi, he became the clans leader. He eventually met a girl named Yuki, who became his girlfriend. He defeated Goro Daimon and Benimaru Nikaido to become the leader of the Japan Team. Afterwards, the three became teammates and good friends.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/kyo/kyo1.gif" alt="Kyo Base animação I">
+                <img src="/img/chars/kyo/kyo2.gif" alt="Kyo Base animação II">
+                <img src="/img/chars/kyo/kyo3.gif" alt="Kyo Base animação III">
+                <img src="/img/chars/kyo/kyo4.gif" alt="Kyo Base animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/kyo/kyo5.gif" alt="Kusanagi I">
+                <img src="/img/chars/kyo/kyo7.webp" alt="Kusanagi II">
+                <img src="/img/chars/kyo/kyo6.gif" alt="Kusanagi III">
+                <img src="/img/chars/kyo/kyo8.gif" alt="Kusanagi IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Benimaru</h1>
+            <p>Benimaru is the son of a multi-millionaire family. He is a part time professional model and a professional fighter who is very confident in his abilities. His fighting style is based on shoot fighting and he can use electricity in many of his attacks.Benimaru entered and made it to the finals. In the first tournament he lost to Kyo and earned second place. Later, he teamed up with Kyo and Goro Daimon to form the Japan team during the Orochi Saga.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/benimaru/beni1.gif" alt="Benimaru animação I">
+                <img src="/img/chars/benimaru/beni2.gif" alt="Benimaru animação II">
+                <img src="/img/chars/benimaru/beni3.gif" alt="Benimaru animação III">
+                <img src="/img/chars/benimaru/beni4.gif" alt="Benimaru animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Goro Daimon</h1>
+            <p>Goro is a former Olympic gold medallist in Judo. He participated in Japan's mixed martial arts tournament to determine the members for the country's King of Fighters team. Although he got far into the finals, he lost against Kyo and was bumped to third place. A year later, he entered the KOF tournament with Benimaru (second place) and Kyo. He eventually be friends his teammates and continues to enter with them.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/goro/goro1.gif" alt="Goro animação I">
+                <img src="/img/chars/goro/goro2.gif" alt="Goro animação II">
+                <img src="/img/chars/goro/goro3.gif" alt="Goro animação III">
+                <img src="/img/chars/goro/goro4.gif" alt="Goro animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Yashiro Nanakase</h1>
+            <p>Yashiro is the lead guitarist of the rock group C.Y.S. However, this is all a front as, for the past 660 years, he has undergone multiple reincarnations as a member of the Four Heavenly Kings of Orochi--which are the true enemies of the Three Sacred Treasures. He develops an interest in the mysterious powers wielded by the strange being known as Verse, and sets out with his friends Shermie and Chris to join KOF.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/yashiro/yashiro-pose1.gif" alt="yashiro animação I">
+                <img src="/img/chars/yashiro/yashiro-pose2.gif" alt="yashiro animação II">
+                <img src="/img/chars/yashiro/yashiro-pose3.gif" alt="yashiro animação III">
+                <img src="/img/chars/yashiro/yashiro-pose4.gif" alt="yashiro animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/yashiro/yashiro-pose5.gif" alt="Yashiro Orochi I">
+                <img src="/img/chars/yashiro/yashiro-pose6.gif" alt="Yashiro Orochi II">
+                <img src="/img/chars/yashiro/yashiro-pose7.gif" alt="Yashiro Orochi III">
+                <img src="/img/chars/yashiro/yashiro-pose8.gif" alt="Yashiro Orochi IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Shermie</h1>
+            <p>Shermie rounds out the "New Face Team" of KOF. Shermie, Yashiro and Chris are in a music band together called "CYS" (based on their first initials). Shermie plays the keyboards. They enter KOF '97 tournament due to Yashiro's grudge against rival band player, Iori Yagami. Even though Shermie plays in a band, her day job is fashion design. Her fighting style is pro-wrestling, but little is known of where she learned her technique. She is one of the Four Heavenly Kings of the Orochi.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/shermie/shermie-pose1.gif" alt="Shermie animação I">
+                <img src="/img/chars/shermie/shermie-pose2.gif" alt="Shermie animação II">
+                <img src="/img/chars/shermie/shermie-pose3.gif" alt="Shermie animação III">
+                <img src="/img/chars/shermie/shermie-pose4.gif" alt="Shermie animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/shermie/shermie-pose5.gif" alt="Shermie Orochi I">
+                <img src="/img/chars/shermie/shermie-pose7.gif" alt="Shermie Orochi II">
+                <img src="/img/chars/shermie/shermie-pose8.gif" alt="Shermie Orochi III">
+                <img src="/img/chars/shermie/shermie-pose6.gif" alt="Shermie Orochi IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Chris</h1>
+            <p>Chris is the youngest member of the "New Face Team" where Chris plays the drums.. Their goal was to regain Orochi's full power and trigger the Riot of the Blood within Iori and Leona. Using their remaining energy, Yashiro and Shermie sacrificed themselves to reincarnate Orochi into Chris' body. In turn, Orochi is able to return to the world while using Chris' body as the host, but Orochi itself is re-sealed again by the Three Sacred Treasures: Kyo, Iori, and Chizuru Kagura.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/chris/chris-pose1.gif" alt="chris animação I">
+                <img src="/img/chars/chris/chris-pose2.gif" alt="chris animação II">
+                <img src="/img/chars/chris/chris-pose3.gif" alt="chris animação III">
+                <img src="/img/chars/chris/chris-pose4.gif" alt="chris animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/chris/chris-pose5.gif" alt="Chris Orochi I">
+                <img src="/img/chars/chris/chris-pose6.gif" alt="Chris Orochi II">
+                <img src="/img/chars/chris/chris-pose7.gif" alt="Chris Orochi III">
+                <img src="/img/chars/chris/chris-pose8.gif" alt="Chris Orochi IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Iori Yagami</h1>
+            <p>Iori is the born enemy of Kyo Kusanagi. The Yagami clan originally helped seal Orochi, but later made a pact with it. This gave them greater power, but shortened their lives. Iori joins KOF simply to fight Kyo. Before the King of Fighters '96 tournament, Iori is visited by Vice and Mature. They tell him about Kyo entering the tournament and try convincing him to join as well. After a brief fight, Iori agrees to enter, once the two submit to be his servants.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/iori/iori1.gif" alt="Iori animação I">
+                <img src="/img/chars/Iori/iori2.gif" alt="Iori animação II">
+                <img src="/img/chars/Iori/iori3.gif" alt="Iori animação III">
+                <img src="/img/chars/iori/iori4.gif" alt="Iori animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/iori/iori5.gif" alt="Iori Orochi I">
+                <img src="/img/chars/iori/iori6.gif" alt="Iori Orochi II">
+                <img src="/img/chars/iori/iori8.gif" alt="Iori Orochi III">
+                <img src="/img/chars/iori/iori7.gif" alt="Iori Orochi IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">mature</h1>
+            <p>As one of the Hakkesshu (Orochi's assassins), Mature joins forces with Vice to serve their master, Orochi. The two took orders from one of the Four Heavenly Kings of Orochi, Goenitz, even though they didn't like him. She and Vice were ordered by Goenitz to keep an eye on Rugal, who was attempting to use Orochi's power, so they posed as his secretaries. When Rugal was killed, Goenitz ordered Vice and Mature to follow Iori Yagami, due to his Yagami heritage of the Orochi power.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/mature/mature1.gif" alt="Mature animação I">
+                <img src="/img/chars/mature/mature2.gif" alt="Mature animação II">
+                <img src="/img/chars/mature/mature4.gif" alt="Mature animação III">
+                <img src="/img/chars/mature/mature3.gif" alt="Mature animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Vice</h1>
+            <p>As one of the Hakkesshu (Orochi's assassins), Vice joined forces with Mature to serve their master, Orochi. The two took orders from one of the Four Heavenly Kings of Orochi, Goenitz, even though they didn't like him. Goenitz ordered the two to keep an eye on Rugal Bernstein who was attempting to use Orochi's power, so they posed as his secretaries. When Rugal kidnapped Saisyu Kusanagi during the events of King of Fighters 1995, Vice was ordered to brainwash him. He put up a fight, but she eventually succeeded.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/vice/vice1.gif" alt="Vice animação I">
+                <img src="/img/chars/vice/vice2.gif" alt="Vice animação II">
+                <img src="/img/chars/vice/vice3.gif" alt="Vice animação III">
+                <img src="/img/chars/vice/vice4.gif" alt="Vice animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Ralf Jones</h1>
+            <p>Ralf are member of an elite mercenary-for-hire agency called the Ikari Warriors. Over the years, Ralf has proven himself to be a powerful soldier with natural leadership abilities and courage on the battlefield. He currently holds the rank of colonel. Ralf and Clark became friends when they were in their 20s and have stayed good friends since. This friendship originated in the 1986 SNK arcade game Ikari Warriors. </p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/ralf/ralf1.gif" alt="Ralf animação I">
+                <img src="/img/chars/ralf/ralf2.gif" alt="Ralf animação II">
+                <img src="/img/chars/ralf/ralf3.gif" alt="Ralf animação III">
+                <img src="/img/chars/ralf/ralf4.gif" alt="Ralf animação IV">
+
+              </div>
+            </div>
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 2-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Leona Heidern</h1>
+            <p>Leona was born in an village of Orochi bloodline members. One night, when her was still a child, she lost control of herself, entering the Riot of Blood and slaughtered everyone in the village. After this, Leona loses her memories and wanders aimlessly until she is found by Heidern, who decides to adopt her. Heidern was taken back by her natural fighting ability, and decides to train her as a warrior under his command.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/leona/leona1.gif" alt="Leona animação I">
+                <img src="/img/chars/leona/leona2.gif" alt="Leona animação II">
+                <img src="/img/chars/leona/leona3.gif" alt="Leona animação III">
+                <img src="/img/chars/leona/leona4.gif" alt="Leona animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span></li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img src="/img/chars/leona/leona5.gif" alt="Leona Orochi animação I">
+                <img src="/img/chars/leona/leona6.gif" alt="Leona Orochi animação II">
+                <img src="/img/chars/leona/leona7.gif" alt="Leona Orochi animação III">
+                <img src="/img/chars/leona/leona8.gif" alt="Leona Orochi animação IV">
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Clark Still</h1>
+            <p>Clark is part of the Ikari Warriors mercenary agency who is under the orders of Commander Heidern. He was formerly a spy before he entered their service. Clark is known for being a focused and loyal soldier who specializes in gathering information for their missions. He apparently wears his sunglasses to hide a scar in the middle of his forehead; it was caused by Ralf who was carelessly playing with his knives at the time.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/clark/clark1.gif" alt="Clark animação I">
+                <img src="/img/chars/clark/clark2.gif" alt="Clark animação II">
+                <img src="/img/chars/clark/clark3.gif" alt="Clark animação III">
+                <img src="/img/chars/clark/clark4.gif" alt="Clark animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Kula Diamond</h1>
+            <p>Kula Diamond subject's was a mindless puppet with no sign of emotions (aside from being an innocent young girl). She is often ordered to exterminate other traitors to NESTS. After NESTS's destruction, she allies herself on friendly terms with her created target, K' and his companions, understanding that both their lives were ruined by NESTS. Whip affectionately refers to her as the "little sister" of the group.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/kula/kula1.gif" alt="Kula animação I">
+                <img src="/img/chars/kula/kula2.gif" alt="Kula animação II">
+                <img src="/img/chars/kula/kula3.gif" alt="Kula animação III">
+                <img src="/img/chars/kula/kula4.gif" alt="Kula animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">Angel</h1>
+            <p>Angel is an agent of a secret organization known as NESTS. She is assigned to keep an eye on K9999, whose purpose is to hunt down traitorous experiments that had left NESTS. They set off to find K' and other traitors of the organization. Near the end of the KOF 2001 tournament, it is revealed that both Angel and K9999 are on a mission to kill Kula and her guardians.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/angel/angel1.gif" alt="Angel animação I">
+                <img src="/img/chars/angel/angel2.gif" alt="Angel animação II">
+                <img src="/img/chars/angel/angel3.gif" alt="Angel animação III">
+                <img src="/img/chars/angel/angel4.gif" alt="Angel animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+
+          </article>
+        </section>
+
+        <section class="char 1-forma">
+
+          <article class="char-data">
+            <h1 class="char-name">K9999</h1>
+            <p>A violent and unstable man, K9999 became the "perfected" 9999th Kyo clone. Unlike K', K9999 was created ground-up as a clone from Kyo's DNA. He wields an enormous amount of power but has trouble controlling it. The blue glove he wears helps him control his shapeshifting powers and keep them from going berserk. He has an intense hatred for K' and considers him his ultimate rival. K9999 fights with his polymorphic arm. His arm can transform into claws, blades of different sizes and shapes, and into a shotgun.</p>
+          </article>
+
+          <article class="char-animation">
+            <div class="lista-gifs-1 ativo">
+              <ul class="animation-buttons js-animation-button ativo">
+                <li>
+                  <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite I</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite II</span>
+
+                </li>
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite III</span>
+
+                <li> <span onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">sprite IV</span>
+
+                </li>
+                </li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose1">
+                <img class="gif-ativo" src="/img/chars/k9999/k91.gif" alt="K9999 animação I">
+                <img src="/img/chars/k9999/k92.gif" alt="K9999 animação II">
+                <img src="/img/chars/k9999/k93.gif" alt="K9999 animação III">
+                <img src="/img/chars/k9999/k94.gif" alt="K9999 animação IV">
+
+              </div>
+            </div>
+
+            <div class="lista-gifs-2">
+              <ul class="animation-buttons js-animation-button">
+                <li>
+                  <span></span>
+                </li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+                <li> <span></span></li>
+              </ul>
+
+              <div class="animation-pose js-animation js-pose2">
+                <img>
+                <img>
+                <img>
+                <img>
+              </div>
+            </div>
+          </article>
+        </section>
+
+      </div>
+
+      <section class="select">
+
+        <div class="g1-800">
+          <ul class="select-char js-tabselect trio-odd">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/1-k.png" alt="K' icon">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+              <span>
+
+                <audio id="selectSound" src="/sounds/select.wav"></audio>
+              </span>
+              <img class="ativo" src="/img/select/1-maxima.png" alt="Maxima icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/1-whip.png" alt="">
+              <img src="/img/select/orochi-chris.png" alt="Whip icon">
+            </li>
+          </ul>
+
+          <ul class="select-char js-tabselect trio-even">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/2-terry.png" alt="Terry Bogard icon'">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+
+              <img class="ativo" src="/img/select/2-andy.png" alt="Andy Bogard icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/2-joe.png" alt="Joe Higashi icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+        </div>
+
+        <div class="g2-800">
+          <ul class="select-char js-tabselect trio-odd">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/3-mai.png" alt="Mai Shiranui icon">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/3-athena.png" alt="Athena Asamiya icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/3-may-lee.png" alt="May Lee icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+
+          <ul class="select-char js-tabselect trio-even">
+            <li class="hexagon orochi" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/4-kyo.png" alt="Kyo Kusanagi icon">
+              <img src="/img/select/orochi-kyo.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/4-benimaru.png" alt="Benimaru icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/4-goro.png" alt="Goro Daimon icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+        </div>
+
+        <div class="g1-800">
+          <ul class="select-char js-tabselect trio-odd">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/5-yashiro.png" alt="Yashiro icon">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/5-shermie.png" alt="Shermie icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/5-chris.png" alt="Chris icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+
+          <ul class="select-char js-tabselect trio-even">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/6-iori.png" alt="Iori Yagami icon">
+              <img src="/img/select/orochi-iori.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/6-mature.png" alt="Mature icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/6-vice.png" alt="Vice icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+        </div>
+
+        <div class="g2-800">
+          <ul class="select-char js-tabselect trio-odd">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/7-ralf.png" alt="Ralf icon">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/7-leona.png" alt="Leona Heidern icon">
+              <img src="/img/select/orochi-leona.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/7-clark.png" alt="Clark icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+
+          <ul class="select-char js-tabselect trio-even">
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/8-kula.png" alt="Kula Diamond icon">
+              <img src="/img/select/orochi-yashiro.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/8-angel.png" alt="Angel icon">
+              <img src="/img/select/orochi-shermie.png" alt="">
+            </li>
+
+            <li class="hexagon" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+
+              <img class="ativo" src="/img/select/8-k9999.png" alt="K999 icon">
+              <img src="/img/select/orochi-chris.png" alt="">
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <div class="char-img js-tabimg">
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img cel-right ativo" src="/img/chars/k/k-1.webp" alt="K'">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/maxima/maxima.webp" alt="Maxima">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/whip/whip.webp" alt="Whip">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/terry/terry.webp" alt="Terry Bogard">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img cel-right2 ativo" src="/img/chars/andy/andy.webp" alt="Andy Bogard">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img ativo cel-right2" src="/img/chars/joe/joe.webp" alt="Joe Higashi">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img ativo cel-right2" src="/img/chars/mai/mai.webp" alt="Mai Shiranui">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/athena/athena.webp" alt="Athena Asamiya">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/may-lee/may-lee.webp" alt="May Lee">
+          </picture>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo" src="/img/chars/kyo/kyo-1.webp" alt="Kyo Base">
+            <img class="imagem-char segunda-img" src="/img/chars/kyo/kyo-2.webp" alt="Kyo Clone">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img cel-right2 ativo" src="/img/chars/benimaru/benimaru-1.webp" alt="Benimaru">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right2" src="/img/chars/goro/goro.webp" alt="Goro Daimon">
+          </picture>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo" src="/img/chars/yashiro/yashiro-1.webp" alt="Yashiro Base">
+            <img class="imagem-char segunda-img" src="/img/chars/yashiro/yashiro-2.webp" alt="yashiro Orochi">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo" src="/img/chars/shermie/shermie-1.webp" alt="Shermie Base">
+            <img class="imagem-char segunda-img" src="/img/chars/shermie/shermie-2.webp" alt="Shermie Orochi">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo" src="/img/chars/chris/chris-1.webp" alt="Chris Base">
+            <img class="imagem-char segunda-img" src="/img/chars/chris/chris-2.webp" alt="Chris Orochi">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/iori/iori-1.webp" alt="Iori Yagami Base">
+            <img class="imagem-char segunda-img" src="/img/chars/iori/iori-2.png" alt="Iori Yagami Orochi">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+
+
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img cel-right ativo" src="/img/chars/mature/mature-1.webp" alt="Mature">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img cel-right2 ativo" src="/img/chars/vice/vice-1.webp" alt="Vice">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img cel-right2 ativo" src="/img/chars/ralf/ralf-1.webp" alt="Ralf Jones">
+          </picture>
+        </section>
+
+        <section class="char-individual 2-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo" src="/img/chars/leona/leona-1.webp" alt="Leona Heidern Base">
+            <img class="imagem-char segunda-img" src="/img/chars/leona/leona-2.webp" alt="Leona Heidern Orochi">
+          </picture>
+          <span class="botao-troca" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">Orochi Mode</span>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/clark/clark-1.webp" alt="Clark">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/kula/kula-1.webp" alt="Kula Diamond">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img ativo cel-right" src="/img/chars/angel/angel-1.webp" alt="Angel">
+          </picture>
+        </section>
+
+        <section class="char-individual 1-forma">
+          <picture class="imagens-char">
+            <img class="imagem-char primeira-img left-img2 ativo cel-right2" src="/img/chars/k9999/k9999.webp" alt="K9999">
+          </picture>
+        </section>
+
+
+
+
+
+      </div>
+    </main>
+
+    <div class="bg-fixed">
+      <span class="bg-lines"><img src="/img/lines-bg.png" alt=""></span>
+    </div>
+
+    <footer class="footer-bg">
+      <div class="footer container">
+        <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="logo" href="/index.html"><img src="/img/logo.png" alt=""></a>
+        <nav class="menu-link">
+          <ul>
+            <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/index.html">characters</a></li>
+            <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/stages.html">stages</a>
+              <span>
+                <audio id='hoverSound' src="/sounds/hover.wav" />
+                <audio id="selectSound" src="/sounds/select.wav"></audio>
+              </span>
+            </li>
+
+          </ul>
+          </li>
+        </nav>
+        <ul class="idioma-box">
+          <li class="idioma">
+
+            <img src="/img/icons/world.svg" alt="">
+            <div onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="select-button" aria-expanded="false" aria-controls="select-languaje">
+              <span class="selected-value">EN US</span>
+            </div>
+
+            <ul class="select-languaje" id="select-languaje">
+              <li>
+                <input type="radio" id="pt-br" name="languaje">
+                <label for="pt-br"><img src="/img/icons/world.svg" alt=""> PT BR</label>
+              </li>
+              <li>
+                <input type="radio" id="en-us" name="languaje">
+                <label for="en-us"><img src="/img/icons/world.svg" alt="">EN US</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</body>
+<script src="/js/script.js"></script>
+<script type="module" src="/js/script2.js"></script>
+
+</html>

@@ -1,0 +1,176 @@
+.chars-complete .char {
+  display: none;
+}
+
+.chars-complete .char.ativo {
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+  height: 84vh;
+}
+
+.char-data h1 {
+  font-family: "The King of Fighters 2002";
+  font-size: 1.8rem;
+  width: 8ch;
+  line-height: 1.3;
+  margin-bottom: 18px;
+  text-shadow: -2px 2px 0px black;
+}
+
+.char-data p {
+  font-size: 0.875rem;
+}
+
+.char-animation {
+  display: grid;
+  align-items: end;
+  gap: 12px;
+  flex-grow: 2;
+}
+
+.char-animation img {
+  height: min-content;
+}
+
+/* //BOTOES LISTA ANIMACAO */
+
+.lista-gifs-1,
+.lista-gifs-2 {
+  display: none;
+}
+
+.lista-gifs-1.ativo,
+.lista-gifs-2.ativo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 40px;
+}
+.animation-buttons {
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.animation-buttons li,
+.char-img span {
+  cursor: pointer;
+  width: 146px;
+  height: 42px;
+  background-image: url("/img/buttons/botao-1-verde.gif");
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+.animation-buttons li:hover,
+.char-img span:hover {
+  transform: translate3d(3px, -3px, 3px);
+  filter: drop-shadow(-3px 3px 0px rgba(0, 0, 0, 1));
+  transition: 0.2s;
+}
+
+.animation-buttons li span {
+  font-family: "The King of Fighters 2002";
+  color: white;
+  text-shadow: -2px 2px 0px black;
+  text-align: center;
+}
+
+.animation-buttons li.ativo {
+  background-image: url("/img/buttons/botao-1-laranja.gif");
+}
+
+.animation-buttons.orochi li {
+  background-image: url("/img/buttons/botao-2-red.gif");
+}
+
+.animation-buttons.orochi li.ativo {
+  background-image: url("/img/buttons/botao-2-rosa.gif");
+}
+
+/* CHAR ANIMATION GIFS */
+
+.animation-pose {
+  height: 216px;
+  background-image: url("/img/buttons/Back-animação.png");
+  background-size: cover;
+  background-position: bottom left;
+  width: 100%;
+}
+
+.animation-pose Img {
+  display: none;
+}
+
+.animation-pose Img.ativo {
+  display: block;
+  place-self: center;
+  height: 100%;
+  min-width: 100px;
+}
+
+.js-animation-button {
+  display: none;
+}
+
+.js-animation-button.ativo {
+  display: block;
+}
+
+@media (max-width: 1240px) {
+  .chars-complete .char.ativo {
+    gap: 20px;
+  }
+
+  .char-data h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .char-data p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .char-data p {
+    font-size: 0.7rem;
+    max-width: 36ch;
+  }
+}
+
+@media (max-width: 800px) {
+  .chars-complete .char.ativo {
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    gap: 32px;
+    height: fit-content;
+    margin-bottom: 80px;
+  }
+
+  .chars-complete {
+    order: 3;
+  }
+
+  .char-animation {
+    flex-grow: 0;
+  }
+
+  .char-data p {
+    font-size: 0.875rem;
+    max-width: max-content;
+  }
+
+  .char {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .animation-buttons li span,
+  .char-img span {
+    font-size: 0.8rem;
+  }
+}

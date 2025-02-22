@@ -1,0 +1,332 @@
+.header-bg {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+  display: block;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+
+.logo:hover,
+.menu-link a:hover,
+.idioma .select-button:hover {
+  transform: translate3d(1px, -1px, 1px);
+  filter: drop-shadow(-1px 1px 0px rgba(0, 0, 0, 1));
+  transition: 0.2s;
+}
+
+.idioma img:first-of-type {
+  filter: drop-shadow(-2px 2px 0px rgba(0, 0, 0, 1));
+}
+
+.header ul li,
+.footer ul li {
+  font-family: "The King of Fighters 2002";
+  font-size: 0.6rem;
+  cursor: pointer;
+  text-shadow: -2px 2px 0px black;
+}
+
+.menu-link li a {
+  position: relative;
+  padding: 8px 0;
+  display: inline-block;
+}
+
+.menu-link li a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 3px;
+  background-image: linear-gradient(to right, #f42200, #fffc26);
+  margin-top: 4px;
+  position: absolute;
+  bottom: -2px;
+}
+
+.menu-link li a:hover:after,
+.menu-link li a.ativo::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* novo header */
+
+.header-items {
+  display: grid;
+  width: 100%;
+  margin-top: 8px;
+}
+
+#header .logo {
+  position: absolute;
+  top: 20px;
+}
+
+.menu-link {
+  justify-self: center;
+  margin-left: -50px;
+}
+
+.header .menu-link ul {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+}
+
+.idioma-box {
+  justify-self: end;
+  margin-top: -26px;
+  margin-right: 64px;
+}
+
+.som-box {
+  place-self: end;
+  position: absolute;
+  top: 24px;
+}
+
+.btn-open {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu {
+  display: none;
+}
+
+.link-mobile {
+  display: none;
+}
+
+.close-menu img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.img-menu {
+  position: absolute;
+  bottom: 40px;
+  left: -20px;
+  width: 100%;
+  display: none;
+}
+
+.img-menu img {
+  width: 100%;
+}
+
+/* SOM */
+
+.button-som {
+  display: none !important;
+}
+
+.button-som.ativo {
+  display: block !important;
+  width: 28px;
+}
+
+.button-som.ativo img {
+  height: 24px;
+}
+
+.button-som.ativo:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+/* IDIOMA */
+.idioma-box {
+  display: flex;
+  gap: 20px;
+}
+
+.idioma {
+  position: relative;
+  display: flex;
+  border: white solid 1px;
+  padding: 0 6px;
+}
+
+.select-button {
+  font-family: "The King of Fighters 2002";
+  cursor: pointer;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.select-languaje {
+  margin-top: 2px;
+  position: absolute;
+  scrollbar-width: none;
+  display: none !important;
+  width: 100%;
+  top: 24px;
+  left: 0;
+}
+
+.select-languaje li {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.select-languaje li label {
+  width: 100%;
+  padding: 8px 4px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  gap: 12px;
+}
+
+.select-languaje li:hover {
+  transform: translate3d(1px, 1px, 1px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.select-languaje input[type="radio"] {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+/* interactivity */
+
+.idioma.active .select-languaje {
+  display: block !important;
+  transform: scaleY(1);
+  z-index: 1;
+}
+
+@media (max-width: 800px) {
+  .body-1 {
+    overflow: scroll;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container.principal {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+
+  .header-bg {
+    margin-top: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    position: static;
+  }
+
+  .header {
+    margin-bottom: 40px;
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  #header .logo {
+    position: static;
+  }
+
+  .btn-open {
+    display: block;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .header-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 28px 28px;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: -70px;
+    background-color: #001560;
+    transition: 0.2s ease;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .header-items.ativo {
+    width: 70%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    right: 0;
+  }
+
+  .som-box {
+    position: static;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .button-som.ativo {
+    width: max-content;
+  }
+
+  .button-som.ativo img {
+    width: max-content;
+    height: 32px;
+  }
+
+  .menu-link ul {
+    padding-left: 20px;
+  }
+
+  .header .menu-link ul {
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 44px;
+  }
+
+  .header ul li,
+  .footer ul li {
+    font-size: 0.875rem;
+  }
+
+  .idioma-box {
+    justify-content: center;
+    margin-top: 0;
+    margin-right: 0;
+    height: max-content;
+  }
+
+  .select-button {
+    padding: 8px 12px;
+    position: relative;
+  }
+
+  .idioma img {
+    width: 20px;
+  }
+
+  .img-menu {
+    display: block;
+  }
+}

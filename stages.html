@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Stages</title>
+  <audio id="musicplayer" loop>
+    <source src='/sounds/som-guile-.mp3'>
+  </audio>
+  <link rel="icon" href="./favicon-kof.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0048eb">
+</head>
+
+<body class="body-2">
+  <header class="header-bg" id="header">
+    <div class="header container">
+
+      <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="logo" href="/index.html"><img src="/img/logo.png" alt=""></a>
+
+      <span class="btn-open" data-menu="button" aria-expanded="false" aria-controls="menu"><img src="/img/icons/hamburguer.svg" alt=""></span>
+
+      <div class="header-items">
+        <ul class="som-box">
+          <li onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="button-som ativo" onclick="play();"><img src="/img/icons/som-on.svg" alt=""></li>
+          <li onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="button-som" onclick="pause();"><img src="/img/icons/som-off.svg" alt=""></li>
+          <li class="close-menu"><img src="/img/icons/x.svg" alt=""></li>
+        </ul>
+
+        <nav class="menu-link">
+          <ul>
+            <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/index.html">characters</a></li>
+            <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/stages.html">stages</a></li>
+
+          </ul>
+          </li>
+        </nav>
+
+        <ul class="idioma-box">
+          <li class="idioma">
+
+            <img src="/img/icons/world.svg" alt="">
+            <div onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="select-button" aria-expanded="false" aria-controls="select-languaje">
+              <span class="selected-value">EN US</span>
+            </div>
+
+            <ul class="select-languaje" id="select-languaje">
+              <li>
+                <input type="radio" id="pt-br" name="languaje">
+                <label for="pt-br"><img src="/img/icons/world.svg" alt=""> PT BR</label>
+              </li>
+              <li>
+                <input type="radio" id="en-us" name="languaje">
+                <label for="en-us"><img src="/img/icons/world.svg" alt="">EN US</label>
+              </li>
+
+            </ul>
+
+
+          </li>
+        </ul>
+        <picture class="img-menu">
+          <img src="/img/iorivskyo1.gif" alt="">
+        </picture>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="container stages">
+    <h1>Stages</h1>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s1.gif" alt="Stage 1">
+    </picture>
+
+
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s2.gif" alt="Stage 2">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s3.gif" alt="Stage 3">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s4.gif" alt="Stage 4">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s5.gif" alt="Stage 5">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s6.gif" alt="Stage 6">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s7.gif" alt="Stage 7">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s8.gif" alt="Stage 8">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s9.gif" alt="Stage 9">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s10.gif" alt="Stage 10">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s11.gif" alt="Stage 11">
+    </picture>
+    <picture class="stage-cont-img" onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" onclick="PlaySoundSelect('selectSound')">
+      <img src="/img/stages/s12.gif" alt="Stage 12">
+    </picture>
+
+    <span class="blur" id="blur"></span>
+
+  </main>
+
+  <div class="bg-fixed">
+    <span class="bg-lines"><img src="/img/lines-bg.png" alt=""></span>
+  </div>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="logo" href="/index.html"><img src="/img/logo.png" alt=""></a>
+      <nav class="menu-link">
+        <ul>
+          <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/index.html">characters</a></li>
+          <li> <a onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" href="/stages.html">stages</a>
+            <span>
+              <audio id='hoverSound' src="/sounds/hover.wav" />
+              <audio id="selectSound" src="/sounds/select.wav"></audio>
+            </span>
+          </li>
+
+        </ul>
+        </li>
+      </nav>
+      <ul class="idioma-box">
+        <li class="idioma">
+
+          <img src="/img/icons/world.svg" alt="">
+          <div onmouseover="PlaySound('hoverSound')" onmouseout="StopSound('hoverSound')" class="select-button" aria-expanded="false" aria-controls="select-languaje">
+            <span class="selected-value">EN US</span>
+          </div>
+
+          <ul class="select-languaje" id="select-languaje">
+            <li>
+              <input type="radio" id="pt-br" name="languaje">
+              <label for="pt-br"><img src="/img/icons/world.svg" alt=""> PT BR</label>
+            </li>
+            <li>
+              <input type="radio" id="en-us" name="languaje">
+              <label for="en-us"><img src="/img/icons/world.svg" alt="">EN US</label>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+<script src="/js/script.js"></script>
+<script type="module" src="/js/script2.js"></script>
+
+</html>

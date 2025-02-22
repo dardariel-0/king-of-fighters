@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to top, #0048eb, #001560, #0048eb); */
+  scrollbar-width: none;
+  font-family: poppins;
+  color: white;
+  overflow: hidden;
+}
+
+.body-1,
+.body-2 {
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+@media (max-width: 800px) {
+  .body-1,
+  .body-2 {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+blockquote,
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.container.principal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.bg-fixed {
+  user-select: none;
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #0048eb, #001560, #0048eb);
+}
+
+.bg-lines img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: fixed;
+}
