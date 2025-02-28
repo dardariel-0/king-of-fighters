@@ -1,31 +1,21 @@
 //menu mobile
-
-import outsideClick from "./modules/outsideclick.js";
-
-// consts
 const btnMobile = document.querySelector(".btn-open");
 const menuMobile = document.querySelector(".header-items");
-const eventos = ["click", "touchstart"];
 const closeMenu = document.querySelector(".close-menu");
 
-// função 1
-
-function menuClik() {
-  menuMobile.classList.toggle("ativo");
-}
-
-btnMobile.addEventListener("click", menuClik);
-closeMenu.addEventListener("click", menuClik);
-
-// função clique outside
-
-function openMenu(event) {
+btnMobile.onclick = function () {
   menuMobile.classList.add("ativo");
-  outsideClick(menuMobile, "click", () => {
-    console.log("teste");
+};
 
+closeMenu.onclick = function () {
+  menuMobile.classList.remove("ativo");
+};
+
+document.onclick = function (evento) {
+  if (
+    !btnMobile.contains(evento.target) &&
+    !menuMobile.contains(evento.target)
+  ) {
     menuMobile.classList.remove("ativo");
-  });
-}
-
-btnMobile.addEventListener("click", openMenu);
+  }
+};
