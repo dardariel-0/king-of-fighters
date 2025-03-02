@@ -283,9 +283,8 @@ function removeAtivo() {
   links[0].classList.remove("ativo");
 }
 
-stageLink.addEventListener("click", removeAtivo);
-
 links.forEach(AtivarLink);
+stageLink.addEventListener("click", removeAtivo);
 
 // MUSICA
 let audio = document.getElementById("musicplayer");
