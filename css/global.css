@@ -90,8 +90,10 @@ a {
 
 @font-face {
   font-family: "The King of Fighters 2002";
-  src: url("/css/font/font-kof.otf") format("otf"),
-    url("/css/font/font-kof.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
+  src: url("./font/fontkof.eot");
+  src: url("./font/fontkof.eot") format("embedded-opentype"),
+    url("./font/fontkof.woff2") format("woff2"),
+    url("./font/fontkof.woff") format("woff"),
+    url("./font/fontkof.ttf") format("truetype"),
+    url("./font/fontkof.svg") format("svg");
 }
