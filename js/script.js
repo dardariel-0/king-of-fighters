@@ -305,17 +305,6 @@ botoes.forEach((botao) => {
 
 // // // SOM
 
-function PlaySound(hoverSound) {
-  const thissound = document.getElementById(hoverSound);
-  thissound.play();
-}
-
-function StopSound(hoverSound) {
-  const thissound = document.getElementById(hoverSound);
-  thissound.pause();
-  thissound.currentTime = 0;
-}
-
 function PlaySoundSelect(selectSound) {
   const thissound = document.getElementById(selectSound);
   thissound.play();
