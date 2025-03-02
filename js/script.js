@@ -269,22 +269,16 @@ if (listaBotaoAnimacao.length && tabSelect.length) {
 // links menu
 
 const links = document.querySelectorAll(".menu-link a");
-const stageLink = links[1];
 
 function AtivarLink(link) {
   const url = location.href;
   const href = link.href;
-  if (url.includes(href)) {
+  if (url.match(href)) {
     link.classList.add("ativo");
   }
 }
 
-function removeAtivo() {
-  links[0].classList.remove("ativo");
-}
-
 links.forEach(AtivarLink);
-stageLink.addEventListener("click", removeAtivo);
 
 // MUSICA
 let audio = document.getElementById("musicplayer");
