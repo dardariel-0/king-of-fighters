@@ -269,6 +269,7 @@ if (listaBotaoAnimacao.length && tabSelect.length) {
 // links menu
 
 const links = document.querySelectorAll(".menu-link a");
+const stageLink = links[1];
 
 function AtivarLink(link) {
   const url = location.href;
@@ -277,6 +278,12 @@ function AtivarLink(link) {
     link.classList.add("ativo");
   }
 }
+
+function removeAtivo() {
+  links[0].classList.remove("ativo");
+}
+
+stageLink.addEventListener("click", removeAtivo);
 
 links.forEach(AtivarLink);
 
