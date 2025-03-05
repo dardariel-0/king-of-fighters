@@ -215,6 +215,7 @@
 
 @media (max-width: 800px) {
   .body-1 {
+    height: 100%;
     overflow: scroll;
     margin: 0;
     display: flex;
