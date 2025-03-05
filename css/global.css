@@ -27,6 +27,9 @@ body {
     flex-direction: column;
     overflow-x: hidden !important;
   }
+  .body-1 .footer {
+    padding-bottom: 40px;
+  }
 }
 
 h1,
